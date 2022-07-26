@@ -1,9 +1,9 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.AspNetCore.Identity;
-namespace xx.Models;
-public class xxuser : Microsoft.AspNetCore.Identity.IdentityUser
+namespace xx.Areas.Identity.Models;
+public class User : Microsoft.AspNetCore.Identity.IdentityUser
 {
 
-        public string FirstName = "";
-        public string LastName = "";
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
 }
