@@ -23,14 +23,16 @@
         }
     };
     let navbarToggler6 = document.querySelector(".header-6 .navbar-toggler");
-    var navbarCollapse6 = document.querySelector(".header-6 .navbar-collapse");
-    document.querySelectorAll(".header-6 .page-scroll").forEach(e => e.addEventListener("click", () => {
-        navbarToggler6.classList.remove("active");
-        navbarCollapse6.classList.remove('show')
-    }));
-    navbarToggler6.addEventListener('click', function() {
-        navbarToggler6.classList.toggle("active");
-    })
+    if(navbarToggler6 != null){
+        var navbarCollapse6 = document.querySelector(".header-6 .navbar-collapse");
+        document.querySelectorAll(".header-6 .page-scroll").forEach(e => e.addEventListener("click", () => {
+            navbarToggler6.classList.remove("active");
+            navbarCollapse6.classList.remove('show')
+        }));
+        navbarToggler6.addEventListener('click', function() {
+            navbarToggler6.classList.toggle("active");
+        })
+    }
 
     function onScroll(event) {
         var sections = document.querySelectorAll('.page-scroll');
