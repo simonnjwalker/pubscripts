@@ -44,7 +44,7 @@
                 var currLink = sections[i];
                 var val = currLink.getAttribute('href');
                 if(val != null){        
-                    var refElement = document.querySelector(val);
+                    var refElement = document.querySelector("[id='" + val + "']");
                     if(refElement != null){
                         var scrollTopMinus = scrollPos + 73;
                         if (refElement.offsetTop <= scrollTopMinus && (refElement.offsetTop + refElement.offsetHeight > scrollTopMinus)) {
