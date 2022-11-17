@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 #pragma warning disable CS8618
-namespace xp.Controllers
+namespace xx.Controllers
 {
     public class SharedController : Controller
     {
