@@ -5,9 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using xx.Controllers;
 #pragma warning disable CS8618
-namespace Seamlex.MyEdApps
+namespace xx.Controllers
 {
     [Area("Identity")]
     public class IdentityController : SharedController
